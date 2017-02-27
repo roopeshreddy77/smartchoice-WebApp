@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a class="list-group-item" ng-repeat="seller in sellers" href="#/{{seller.$id}}">
+        <h4 class="list-group-item-heading">{{seller.storeName}}</h4>
+        <p class="list-group-item-text">
+            {{ seller.address.addrLine1 }}
+            {{ seller.address.city }}
+            {{ seller.address.state }}
+            {{ seller.address.zip }}
+        </p>
+    </a>
+</div>
